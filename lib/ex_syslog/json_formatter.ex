@@ -64,6 +64,6 @@ defmodule ExSyslog.JsonFormatter do
   # Internal functions
 
   defp add_to_log({_, nil}, log), do: log
-  defp add_to_log({key, value}, log), do: Dict.put(log, key, value)
+  defp add_to_log({key, value}, log), do: Map.put(log, key, value)
 
 end
